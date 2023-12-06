@@ -1,0 +1,38 @@
+.advantages-section {
+  position: relative;
+
+  &__container {
+    margin-bottom: 96px;
+    padding: 0 90px;
+
+    &::before {
+      position: absolute;
+      top: -185px;
+      left: calc(50% - 720px);
+      z-index: -1;
+      background-image: url('../images/advantages-background.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 1440px;
+      height: 1507px;
+      content: '';
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/advantages-background@2x.jpg');
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__item {
+    flex-basis: 316px;
+  }
+}

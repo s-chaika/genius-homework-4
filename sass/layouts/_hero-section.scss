@@ -1,0 +1,43 @@
+.hero-section {
+  background-image: url('../images/woman-doctor-with-patient.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/woman-doctor-with-patient@2x.jpg');
+  }
+
+  &__container {
+    padding: 106px 124px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    max-width: 530px;
+    color: var(--color-primary-normal);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.81429;
+    font-family: Play, sans-serif;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    max-width: 238px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &__button {
+    margin-bottom: 14px;
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 18px;
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+}

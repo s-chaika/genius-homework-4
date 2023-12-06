@@ -1,0 +1,20 @@
+.backdrop {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: opacity 0.3s, visibility 0.3s;
+  background-color: rgba(1, 31, 74, 0.4);
+  padding: 20px;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

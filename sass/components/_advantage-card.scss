@@ -1,0 +1,19 @@
+.advantage-card {
+  fill: var(--color-primary-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--color-primary-light);
+  padding: 24px 32px;
+
+  &__text {
+    margin-bottom: 0;
+    color: #000;
+    font-weight: normal;
+    line-height: 1.33333;
+    text-align: center;
+  }
+}

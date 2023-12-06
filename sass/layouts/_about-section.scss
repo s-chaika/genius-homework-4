@@ -1,0 +1,39 @@
+.about-section {
+  &__container {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 176px;
+  }
+
+  &__texts {
+    flex-basis: 52%;
+    margin-top: 40px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.7273;
+
+    & span {
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
+
+  &__images {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 336px;
+    height: 336px;
+
+    &_from-right {
+      align-self: flex-end;
+    }
+  }
+}

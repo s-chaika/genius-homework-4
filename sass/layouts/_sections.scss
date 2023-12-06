@@ -1,0 +1,29 @@
+/* Sections */
+.visually-hidden {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 100px;
+  max-width: 1440px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 64px;
+  font-family: Play, sans-serif;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,0 +1,107 @@
+.star {
+  display: block;
+  position: absolute;
+  animation-iteration-count: infinite;
+
+  &_dark {
+    fill: var(--color-secondary-dark);
+    top: 360px;
+    right: 332px;
+    animation-duration: 8s;
+    animation-name: star-dark-animate;
+    width: 64px;
+    height: 64px;
+  }
+
+  &_blue {
+    fill: var(--color-primary-normal);
+    top: 32px;
+    right: -20px;
+    animation-duration: 5s;
+    animation-name: star-blue-animate;
+    width: 40px;
+    height: 40px;
+  }
+
+  &_gray {
+    fill: var(--color-secondary-light);
+    top: 270px;
+    right: 8px;
+    transform: rotate(8deg);
+    animation-duration: 3s;
+    animation-name: star-gray-animate;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@keyframes star-dark-animate {
+  0% {
+    teransform: rotate(0);
+  }
+
+  30% {
+    transform: rotate(72deg);
+  }
+
+  80% {
+    transform: rotate(-1turn);
+  }
+
+  90% {
+    transform: rotate(-90deg);
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes star-blue-animate {
+  0% {
+    teransform: rotate(60);
+  }
+
+  30% {
+    transform: rotate(10deg);
+    transform: scale(0.5);
+  }
+
+  80% {
+    transform: rotate(1.5turn);
+  }
+
+  90% {
+    transform: rotate(1turn);
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes star-gray-animate {
+  0% {
+    teransform: rotate(60);
+  }
+
+  30% {
+    transform: rotate(10deg);
+    transform: scale(0.5);
+  }
+
+  80% {
+    transform: rotate(1.5turn);
+  }
+
+  90% {
+    transform: rotate(1turn);
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

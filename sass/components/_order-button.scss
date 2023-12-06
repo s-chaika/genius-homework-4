@@ -1,0 +1,13 @@
+.order-button {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 2px solid var(--color-primary-normal);
+  border-radius: 32px;
+  background-color: var(--color-primary-normal);
+  color: var(--color-primary-light);
+  font-weight: 500;
+  font-size: 18px;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
